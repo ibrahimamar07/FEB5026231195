@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TV Production Equipment Rental</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f8f9fa;
+            background-color:white;
         }
         
         .status-bar {
-            background-color: white;
+             background-color: #F8F8F8;
+         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
             padding: 5px 15px;
             display: flex;
             justify-content: space-between;
@@ -73,7 +76,8 @@
         }
         
         .detail-header {
-            background-color: #f8f9fa;
+            background-color: #F8F8F8;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
             padding: 10px 15px;
             border-bottom: 1px solid #dee2e6;
             font-size: 14px;
@@ -112,7 +116,7 @@
         }
         
         .equipment-card {
-            background-color: white;
+            background-color:lightgrey;
             border-radius: 5px;
             padding: 15px;
             margin-bottom: 15px;
@@ -140,15 +144,30 @@
         }
         
         .divider {
-            height: 1px;
-            background-color: #dee2e6;
-            margin: 15px 0;
+            height: 2px;
+            background-color:#999;
+           margin-top: 15px;
+           margin-bottom: 50px;
+           margin-left: 15px;
+           margin-right: 15px;
         }
         .imghead{
             width: 1000%;
             height: 1000%;
             object-fit: contain;
         }
+        .container-fluid {
+            padding: 0;
+        }
+        .custom-bg {
+    background-color:lightgrey;
+        }
+    
+        .bordergaris{
+            border: 3px solid black;
+
+        }
+
     </style>
 </head>
 <body>
@@ -156,74 +175,96 @@
     
    <div class="status-bar">
     <div>9:41</div>
-    <div>
-        <span class="me-2">•••</span>
-        <span class="me-2">📶</span>
-        <span>🔋</span>
+    <div >
+        <i class="bi bi-reception-4"></i>  
+        <i class="bi bi-wifi"></i>         
+        <i class="bi bi-battery-full"></i> 
     </div>
-</div>
+  </div>    
 
-<div class="container-fluid">
+<div class="container py-1">
     <div class="row">
         <div class="col">
-          <img src="img/ck.png" alt="" width="10%">
+          <img src="img/ck.png" alt="" width="10%" class="rounded-circle border border-dark">
         </div>
     </div>
 </div>
 
 <div class="container-fluid">
     <div class="row">
-         <div class="col-12">
-            <img src="img/head.png" alt="Production Equipment" width="100%">
+         <div class="col">
+            <img src="img/head.png"  alt="Production Equipment" width="100%">
         </div>
     </div>
 </div>
     <div class="detail-header">
-        <div class="back-icon">←</div>
+        <div class="back-icon">
+            <i class="bi bi-chevron-left fs-3"></i>
+        </div>
         <div>Detail Peminjaman</div>
     </div>
     
-   
-    <div class="profile-section">
-        <div class="d-flex align-items-center">
-            <div class="profile-placeholder"></div>
-            <div class="profile-info">
-                <h6>Yanuar</h6>
-                <p>Liputan Pengukuhan Professor</p>
-                <p>20/11/24 - 22/11/2024</p>
-                <p>07:00 - 19:00</p>
+    <div class="container-fluid">
+        <div class="card p-3 w-100" style="border: none; border-radius: 0;">
+            <div class="row g-4">
+               
+                <div class="col-auto">
+                    <div class="custom-bg rounded d-flex flex-column align-items-center"
+                         style="width: 130px; height: 170px; margin-top: 50px;
+                         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);">
+                        <div class="rounded-circle border border-dark mb-2" 
+                             style="width: 50px; height: 50px; margin-top: 50px;"></div>
+                        <div class="rounded-circle border border-dark" 
+                             style="width: 70px; height: 30px;"></div>
+                    </div>
+                </div>
+    
+              
+                <div class="col">
+                    <p class="text-muted small mb-0">Nama</p>
+                    <p class="fw-bold pb-0" style="border-bottom:2px solid #999;">Yanuar</p>  
+                    <p class="text-muted small mb-0">Acara / Kegiatan</p>
+                    <p class="fw-bold pb-0" style="border-bottom: 2px solid #999;">Liputan Pengukuhan Profesor</p>
+                    <p class="text-muted small mb-0">Tanggal</p>
+                    <p class="fw-bold pb-0" style="border-bottom:2px solid #999;">20/11/24 - 22/11/2024</p>
+    
+                    <p class="text-muted small mb-0">Waktu</p>
+                    <p class="fw-bold pb-0" style="border-bottom:2px solid #999;">07.00 - 19.00</p>
+                </div>
             </div>
         </div>
     </div>
     
+    
+    
+
     <div class="divider"></div>
     
-    <div class="container mt-2">
+    <div class="container mt-2 ">
         <div class="row">
             <div class="col-12">
                 <div class="equipment-card">
                     <div class="row">
                         <div class="col-4">
-                            <img src="" alt="Canon EOS 4000D">
+                            <img src="img/kamera.png">
                             <div class="equipment-name">CANON EOS 4000D</div>
                         </div>
                         <div class="col-8">
                             <div class="equipment-desc">
                                 <strong>Deskripsi Alat</strong>
-                                <p>Canon EOS 4000D adalah kamera DSLR entry-level yang dilengkapi dengan sensor CMOS APS-C 18MP. Dilengkapi dengan prosesor DIGIC 4+, kamera ini menawarkan kinerja yang baik dengan kemampuan pengambilan foto dan video berkualitas tinggi dalam berbagai kondisi pencahayaan. Kamera DSLR termurah dari Canon ini sangat cocok untuk pemula yang ingin belajar fotografi.</p>
-                            </div>
+                                <p>Canon EOS 4000D adalah kamera DSLR entry-level yang dilengkapi dengan sensor CMOS APS-C 18MP. Dilengkapi dengan prosesor DIGIC 4+, kamera ini menawarkan kinerja yang baik dengan kemampuan pengambilan foto dan video berkualitas tinggi dalam berbagai kondisi pencahayaan.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+    </div>
         <div class="row">
             <div class="col-12">
                 <div class="equipment-card">
                     <div class="row">
                         <div class="col-4">
-                            <img src="" alt="Tripod LED">
+                            <img src="img/tripod.png">
                             <div class="equipment-name">Tripod LED 204</div>
                         </div>
                         <div class="col-8">
